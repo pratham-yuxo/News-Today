@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <Link rel="stylesheet" href="../App.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    #marker {
+      position: absolute;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      background: #ffce53;
+      bottom: 5px;
+      border-radius: 5px;
+      transition: 0.3s;
+
+    }
+
+    footer {
+      background: #111;
+      height: auto;
+      /* width: 100vw; */
+
+      padding-top: 40px;
+      color: #fff;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-content h3 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+
+    .footer-content p {
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+      color: #cacdd2;
+    }
+
+    .socials {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+    }
+
+    .socials li {
+      margin: 0 10px;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: #fff;
+      border: 1.1px solid white;
+      padding: 5px;
+
+      border-radius: 50%;
+
+    }
+
+    .socials a i {
+      font-size: 1.1rem;
+      width: 20px;
+
+
+      transition: color .4s ease;
+
+    }
+
+    .socials a:hover i {
+      color: rgb(98, 249, 4);
+    }
+
+    .footer-bottom {
+      background: #000;
+      /* width: 100vw; */
+      padding: 20px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      float: left;
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+    }
+
+    .footer-bottom p a {
+      color: #44bae8;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .footer-bottom span {
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+    }
+
+    .footer-menu {
+      float: right;
+
+    }
+
+    .footer-menu ul {
+      display: flex;
+    }
+
+    .footer-menu ul li {
+      padding-right: 10px;
+      display: block;
+    }
+
+    .footer-menu ul li a {
+      color: #cfd2d6;
+      text-decoration: none;
+    }
+
+    .footer-menu ul li a:hover {
+      color: #27bcda;
+    }
+
+    @media (max-width:500px) {
+      .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="cont">
+
+      <div class="img"><img src="../../public/mogo.png" alt=""></div>
+      <ul class="list">
+        <div id="marker"></div>
+        <li class="items"> <a href="#">Home</a></li>
+        <li class="items"> <a href="#">About</a></li>
+        <li class="items"><a href="#">Business</a></li>
+        <li class="items"><a href="#">Entertainment</a></li>
+        <li class="items"><a href="#">More..</a></li>
+        <!-- <li class="items"></li>
+          <li class="items"></li>
+          <li class="items"></li> -->
+      </ul>
+    </div>
+
+  </div>
+  <section class="land ">
+    <div class="box">
+
+      <p>Get news from all over the world in one click</p>
+      <a class="batan" href="" style="--clr:#ffa244"> <span>Start Reading</span><i></i></a>
+    </div>
+
+  </section>
+  <footer>
+    <div class="footer-content">
+      <h3>News Today</h3>
+      <p>News Today is a news providing website with the help of an api and will allow you to get news of your choice.Our special thanks to www.newsapi.org</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy; <a href="#">Kuro Ryu</a> </p>
+      <div class="footer-menu">
+        <ul class="f-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+  <!-- <div class="about">
+      <div class="first">
+        <div class="abtimg">
+          <div id="last" class="img"><img src="../../public/mogo.png" alt=""></div>
+          <div style="margin-bottom: 17px;">Designed by Kuro Ryu</div>
+          <div>About</div>
+          <p style="    text-align: center;">News Today is a news providing website with the help of an api and will allow you to get news of your choice</p>
+        </div>
+        <div class="cate">
+          <h2 style="color: rgb(255, 255, 255);">Categories</h2>
+          <ul>
+            <li><a>Business</a></li>
+            <li><a>Entertainment</a></li>
+            <li><a>Sports</a></li>
+            <li><a>Science</a></li>
+            <li><a>Sports</a></li>
+            <li><a>Health</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="thank">
+       <h2 style="color:rgb(255, 255, 255)"> Special thanks to </h2>
+       <h4>www.newsapi.org</h4>
+       <div class="copy">
+         copyright
+        </div>
+      </div>
+    </div>
+
+
+      </div> 
+-->
+</body> 
+  <script>
+    var marker = document.querySelector('#marker')
+    var item = document.querySelectorAll('.list a')
+    console.log(first)
+    function indicator(e) {
+
+      marker.style.left = e.offsetLeft + "px";
+      marker.style.width = e.offsetWidth + "px";
+    }
+    item.forEach(link => {
+      link.addEventListener('click', (e) => {
+        indicator(e.target);
+      })
+    })
+  </script>
+
+</html>
